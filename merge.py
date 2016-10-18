@@ -2,6 +2,9 @@
 # Application: Grabs csvs from local directory, merges them, and export # 
 #			   to out.csv.  											#
 #																		#
+# Versions:  Python 3.5													#
+#			 Anaconda for Python 3.5									#
+#																		#									
 # Libraries: Pandas														#
 #		     Glob														#
 #																		#
