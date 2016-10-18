@@ -17,6 +17,7 @@
 #-----------------------------------------------------------------------#
 
 import pandas as pd
+import numpy as np
 import glob
 
 
@@ -25,6 +26,7 @@ def main():
 	input_directory = import_csv()
 	
 	# Initialize a black DataFrame
+	#columns = pd.Index(['Date','Time','Open','High','Low','Close','NA'])
 	all_data = pd.DataFrame()
 
 	# Appended all the individual files into the all_data Frame
@@ -37,6 +39,7 @@ def main():
 
 def merge_csvs(all_data, input_directory):
 	# Appended all the individual files into the all_data Frame
+
 	for f in input_directory:
 		df = pd.read_csv(f)
 		all_data = all_data.append(df,ignore_index=True)
