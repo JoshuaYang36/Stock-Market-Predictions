@@ -1,6 +1,21 @@
+#-----------------------------------------------------------------------#
+# Application: Grabs csvs from local directory, merges them, and export # 
+#			   to out.csv.  											#
+#																		#
+# Libraries: Pandas														#
+#		     Glob														#
+#																		#
+# Functions: main() - Calls all other functions in order				#
+#			 import_csv() - Grabs all files in our input directory that # 
+#							ends in .csv 								#
+#			 export_csv() - Export merged files to csv 					#
+#			 merge_csvs() - Merges individual files into DataFrame		#
+#																		#
+#-----------------------------------------------------------------------#
 
 import pandas as pd
 import glob
+
 
 def main():
 	# Grabs all files in our input directory that ends in .csv
